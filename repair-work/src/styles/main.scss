@@ -1,0 +1,36 @@
+.main_div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+        .cover{
+        display: flex;
+        background-image: url(../images/holodoc.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+            
+            .cover_transparent_stand{
+            background-color: #e6e6e6;
+            width: 700px;
+            height: 300px;
+            border-radius: 10px;
+            opacity: 0.7;
+            }
+    
+            h1{
+                color: #1f1f1f;
+                margin: 0 auto;
+                text-align: center;
+                position: absolute;
+                max-width: 700px;
+                p{
+                    color: #e60000;
+                }
+            }
+        }
+    }

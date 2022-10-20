@@ -1,0 +1,41 @@
+.types_of_breakdowns{
+    background-color:white;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    h1{
+        text-align: center;
+    }
+    ol{
+        li{ 
+            h2{
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                background-color: #e6e6e6;
+                border-radius: 10px;
+                padding: 10px 30px;
+                transition: all 0.3s ease;
+                li{
+                    font-family: 'CormorantGaramond';
+                    list-style-type:initial;
+                    margin-bottom: 10px;
+
+                    &:first-of-type{
+                        font-weight: bold;
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.visible{
+    position: absolute;
+    opacity: 0;
+    top: 20px;
+}

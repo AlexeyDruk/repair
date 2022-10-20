@@ -1,0 +1,1 @@
+!function(){"use strict";var e=document.getElementById("clickMe");null==e||e.addEventListener("click",(function(e){"H2"===e.target.tagName&&(e.target.nextElementSibling.classList.contains("visible")?e.target.nextElementSibling.classList.remove("visible"):e.target.nextElementSibling.classList.add("visible"))}))}();
