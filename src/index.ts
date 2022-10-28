@@ -1,4 +1,4 @@
-import { type } from 'os';
+import * as _ from 'lodash';
 import './styles/style.css'
 import './styles/style.scss'
 
