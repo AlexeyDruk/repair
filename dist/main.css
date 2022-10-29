@@ -356,14 +356,14 @@ template {
   \*************************************************************************/
 @font-face{
     font-family: 'Roboto';
-    src: url(68cdbb03049084502e4d.ttf) format('truetype');
+    src: url(7edbee7673fb825ed5fc.ttf) format('truetype');
 }
 /*!************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/CormorantGaramond.css ***!
   \************************************************************************************/
 @font-face{
     font-family: 'CormorantGaramond';
-    src: url(dedca89da9aec5cb0783.ttf) format('truetype');
+    src: url(77d3ac9282354754bbb5.ttf) format('truetype');
 }
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/style.css ***!
@@ -448,7 +448,7 @@ nav a:hover {
   transition: all 0.3s ease;
 }
 .types_of_breakdowns ol li ul li {
-  font-family: "CormorantGaramond";
+  font-family: "Roboto", sans-serif;
   list-style-type: initial;
   margin-bottom: 10px;
 }

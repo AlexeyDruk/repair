@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const { loader } = require('mini-css-extract-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -40,7 +41,8 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
         filename: '[name].css'
-    })
+    }),
+    new CleanWebpackPlugin()
  ],
  optimization: optimisation(),
  devServer:{
@@ -69,7 +71,10 @@ module.exports = {
         },
         {
             test:/\.(ttf|woof|woof2|eot)$/,
-            use:['file-loader']
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]'
+              }
         },
         {
             test: /\.js$/,
