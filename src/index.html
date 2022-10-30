@@ -9,10 +9,16 @@
 <body>
    <div class="main_div">
      <nav>
-         <a href="adas">Контакты</a>
-         <a href="adas">Отзывы</a>
-         <a href="adas">Возможные поломки</a>
+      <div class="burger" id="clickBurger">
+         <span class="burger_span"></span>
+      </div>
+      <div class="bread_crumbs">
+         <a href="#contants">Контакты</a>
+         <a href="#comments">Отзывы</a>
+         <a href="#possible_breakdowns">Возможные поломки</a>
          <a href="adas">О нас</a>
+      </div>
+      <a href="tel:+79998402747">Иван: +79998402747</a>
      </nav>
      <main>
         <div class="cover">
@@ -23,7 +29,7 @@
             </h1>
         </div>
         <div id="clickMe" class="types_of_breakdowns">
-            <h1>Распространенные поломки холодильника и их причины</h1>
+            <h1 id="possible_breakdowns">Распространенные поломки холодильника и их причины</h1>
             <ol>
                <li>
                   <h2>В холодильнике пропало внутреннее освещение</h2>
@@ -146,12 +152,16 @@
                </li>
             </ol>
         </div>
-        <div>
+        <div class="comments" id="comments">
          <script> var idcomments_acct = '8f1f572a3e3a4d325e4bc6edca9cfe22'; var idcomments_post_id; var idcomments_post_url; var idcomments_post_title; </script> <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapper.js'></script>
          <script> var idcomments_acct = '8f1f572a3e3a4d325e4bc6edca9cfe22'; var idcomments_post_id; var idcomments_post_url; var idcomments_post_title; </script> <script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapper.js"></script>
         </div>
      </main>
-     <footer>
+     <footer id="contants">
+      <a href="https://t.me/+79998402747"><img src="../src/images/telegram.svg" alt="telegram" title="telegram"></a>
+      <a href="https://wa.me/+79998402747"><img src="../src/images/whatsapp.svg" alt="whatsapp" title="whatsapp"></a>
+      <a href="viber://add?number=79998402747"><img src="../src/images/viber.svg" alt="viber" title="viber"></a>
+      <a href="tel:+79998402747"><img src="../src/images/phone.svg" alt="phone" title="phone"></a>
      </footer>
    </div>
 <script defer="defer" src="index.js"></script></body>

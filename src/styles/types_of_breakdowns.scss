@@ -4,14 +4,20 @@
     max-width: 700px;
     margin: 30px auto;
     padding: 20px;
+    transition: all 0.3s;
     h1{
         text-align: center;
+        margin-bottom: 30px;
     }
     ol{
         li{ 
             h2{
+                transition: all 0.3s;
                 &:hover{
-                    text-decoration: underline;
+                    background-color:black;
+                    color:white;
+                    border-radius: 5px;
+                    padding: 10px;
                     cursor: pointer;
                 }
             }
@@ -19,7 +25,7 @@
                 background-color: #e6e6e6;
                 border-radius: 10px;
                 padding: 10px 30px;
-                transition: all 0.3s ease;
+                transition: all 0.3s;
                 li{
                     font-family: 'Roboto', sans-serif;
                     list-style-type:initial;
