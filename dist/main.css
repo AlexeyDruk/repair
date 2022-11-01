@@ -586,6 +586,9 @@ body h1, body h2, body h3 {
   body h1 {
     font-size: 18px;
   }
+  body .main_div nav {
+    justify-content: right;
+  }
   body .main_div .cover {
     padding: 0;
   }
