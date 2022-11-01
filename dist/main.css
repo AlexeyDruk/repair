@@ -546,7 +546,7 @@ body h1, body h2, body h3 {
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   body h1 {
     font-size: 20px;
     max-width: 380px;
@@ -582,7 +582,7 @@ body h1, body h2, body h3 {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 630px) {
+@media all and (max-width: 630px) {
   body h1 {
     font-size: 18px;
   }
