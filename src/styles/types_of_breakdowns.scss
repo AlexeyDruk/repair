@@ -25,7 +25,7 @@
                 background-color: #e6e6e6;
                 border-radius: 10px;
                 padding: 10px 30px;
-                transition: all 0.3s;
+                transition: top 0.3s;
                 li{
                     font-family: 'Roboto', sans-serif;
                     list-style-type:initial;
@@ -44,4 +44,5 @@
     position: absolute;
     opacity: 0;
     top: 20px;
+    transition: top 0.3s;
 }

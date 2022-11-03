@@ -23,6 +23,11 @@ body{
                     justify-content: right;
                     .burger{
                     display: block;
+                    &:hover{
+                        span:after,span:before{
+                            left: 0px;
+                        }
+                     }
                     }
                     .bread_crumbs{
                         background-color: rgba(17, 17, 17, 0.8);
@@ -63,7 +68,28 @@ body{
         .main_div{
             nav{
                 justify-content: right;
+                a{
+                    &:hover{
+                        background-color: black;
+                        color:white;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                }
             }
+            .types_of_breakdowns{
+
+                        h2{
+                            &:hover{
+                                background-color:white;
+                                color:black;
+                                border-radius: 0px;
+                                padding: 0px;
+                                cursor: none;
+                            }
+                        }
+                    }
             .cover{
                 padding: 0;
                 h1{

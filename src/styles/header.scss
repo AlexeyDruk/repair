@@ -19,7 +19,7 @@ nav{
     position: absolute;
     width: 100%;
     z-index: 5;
-    top: 15px;
+    top: 0px;
     justify-content: space-between;
       .burger{
         z-index: 6;
@@ -58,6 +58,7 @@ nav{
        
       .bread_crumbs{
         transition: all 0.3s;
+        display: flex;
         a{
             @extend  %a;
 
@@ -67,9 +68,15 @@ nav{
         }
        }
         a{
+            display: flex;
             @extend  %a;
             transition: all 0.3s;
             font-size: 20px;
+            align-items: center;
+            img{
+                height: 50px;
+                width: 50px;
+            }
             
             &:hover{
                 background-color: white;

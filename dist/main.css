@@ -388,6 +388,7 @@ template {
   width: 700px;
   height: 300px;
   border-radius: 10px;
+  margin: 0 10px;
   opacity: 0.7;
 }
 .main_div .cover h1 {
@@ -424,7 +425,7 @@ nav {
   position: absolute;
   width: 100%;
   z-index: 5;
-  top: 15px;
+  top: 0px;
   justify-content: space-between;
 }
 nav .burger {
@@ -460,13 +461,20 @@ nav .burger .burger_span:after {
 }
 nav .bread_crumbs {
   transition: all 0.3s;
+  display: flex;
 }
 nav .bread_crumbs a:hover {
   color: #4e5452;
 }
 nav a {
+  display: flex;
   transition: all 0.3s;
   font-size: 20px;
+  align-items: center;
+}
+nav a img {
+  height: 50px;
+  width: 50px;
 }
 nav a:hover {
   background-color: white;
@@ -501,7 +509,7 @@ nav a:hover {
   background-color: #e6e6e6;
   border-radius: 10px;
   padding: 10px 30px;
-  transition: all 0.3s;
+  transition: top 0.3s;
 }
 .types_of_breakdowns ol li ul li {
   font-family: "Roboto", sans-serif;
@@ -517,6 +525,7 @@ nav a:hover {
   position: absolute;
   opacity: 0;
   top: 20px;
+  transition: top 0.3s;
 }
 
 .comments {
@@ -532,11 +541,14 @@ nav a:hover {
 footer {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 footer a, footer img {
   width: 30px;
   height: 30px;
   margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -557,6 +569,9 @@ body h1, body h2, body h3 {
   }
   body .main_div nav .burger {
     display: block;
+  }
+  body .main_div nav .burger:hover span:after, body .main_div nav .burger:hover span:before {
+    left: 0px;
   }
   body .main_div nav .bread_crumbs {
     background-color: rgba(17, 17, 17, 0.8);
@@ -588,6 +603,19 @@ body h1, body h2, body h3 {
   }
   body .main_div nav {
     justify-content: right;
+  }
+  body .main_div nav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  body .main_div .types_of_breakdowns h2:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+    padding: 0px;
+    cursor: none;
   }
   body .main_div .cover {
     padding: 0;
